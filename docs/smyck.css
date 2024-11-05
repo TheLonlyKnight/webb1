@@ -1,0 +1,33 @@
+
+.color{
+    background-color: aqua ;
+    color : blue;
+
+}
+#Me3031245{
+    text-align: center;
+    color :green;
+}
+body{
+    text-align: center;
+    background-color: antiquewhite;
+
+    border: 30cp solid darkblue;
+    box-shadow: 10cp 30pc red;
+
+    margin: 1%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+    padding: 1%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+
+
+}
+.content :hover{
+    color: black;
+    background-color: red;
+
+}
+
