@@ -1,0 +1,43 @@
+
+body{
+    width: 1000px;
+    height: 600px;
+}
+
+.container  { 
+    display: flex;
+    background-color:antiquewhite;
+    height:600px;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    align-self:center;
+    background-color: turquoise;
+    
+}
+.main{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 1;
+}
+nav{
+    background-color: aqua;
+    width: 200px;
+    border: 1px solid blue;
+}
+footer{
+    display:flex;
+    align-self: center;
+    order:2;
+    background-color: blue;
+    height: 100px;
+    width: 1000px;
+}
