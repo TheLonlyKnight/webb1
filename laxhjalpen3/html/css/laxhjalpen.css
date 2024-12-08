@@ -5,6 +5,9 @@
     align-items: center;
     justify-content: center;
 }
+.first-letter {
+  color: green;
+}
 .logo {
     width: 200px;
 }
