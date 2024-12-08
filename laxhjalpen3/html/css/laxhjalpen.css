@@ -42,8 +42,8 @@ h1{
     font-family: "Merienda", cursive;
     
 }
-h1 ::first-letter{
-    color: #00AF64;
+h1::first-letter {
+    color: green;
 }
 
 
