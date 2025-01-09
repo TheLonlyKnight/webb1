@@ -1,9 +1,9 @@
 body{
     background-color: white;
 }
-.menu a:link{
+.nav a:link{
     text-align-last: center;
-    color: #007241;
+    color: #000000;
     border:2px solid #007241;
     background-color: rgb(255, 255, 255);
     text-decoration: none;
@@ -15,7 +15,8 @@ nav{
     border: 1px solid #00ff91;
     display: flex;
     justify-content: space-around;
-    background-color:  #00ff91;;
-    margin :10px;
+    background-color:  #00ff91;
+    padding: 0px;
+    margin : 0px;
 
 }
