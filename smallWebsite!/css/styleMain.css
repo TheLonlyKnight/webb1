@@ -1,11 +1,14 @@
 body{
-    background-color: white;
+
+    margin: 0px;
+    padding: 0px;
+    background-color:cornsilk
 }
 .nav a:link{
     text-align-last: center;
     color: #000000;
     border:2px solid #007241;
-    background-color: rgb(255, 255, 255);
+    background-color: cornsilk;
     text-decoration: none;
     width: 100%;
     margin :10px;
