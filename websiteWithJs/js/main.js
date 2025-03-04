@@ -97,3 +97,15 @@ function checkWinner() {
 
 
 }
+// Reset the game
+var resetButton = document.getElementById("reset");
+resetButton.addEventListener("click", resetGame);
+
+function resetGame() {
+    for (let i = 0; i < cells.length; i++) {
+        cells[i].innerText = "Pizza";
+    }
+    currentPlayer = "X";
+    gameOver = false;
+    board = ["", "", "", "", "", "", "", "", ""];
+}
