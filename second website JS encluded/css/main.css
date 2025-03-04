@@ -1,0 +1,31 @@
+#hiddenelement{
+    background-color: #f0f0f0;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+td{
+    border: 1px solid #000;   
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    text-size-adjust: 100%; 
+}
+    
+.XOButton1, .XOButton2, .XOButton3 {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    background-color: white;
+    display: flex;
+    align-items: column;
+    justify-content: center;
+    margin: 10px;
+}
+#XOContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
