@@ -61,12 +61,12 @@ var winCombination = [
     [0, 3, 6], [1, 4, 7], [2, 5, 8], // Vertical
     [0, 4, 8], [2, 4, 6] // Diagonal
 ];
-
+// add listener to all cells
 var cells = document.getElementsByClassName("cell");
 for (let i = 0; i < cells.length; i++) {
     cells[i].addEventListener("click", cellClicked);
 }
-
+// function to handle cell click
 function cellClicked(event) {
     var cell = event.target;
     var cellIndex = cell.getAttribute("data-index");
@@ -75,11 +75,12 @@ function cellClicked(event) {
         return;
     } else {
         cell.innerText = currentPlayer;
+        board[cellIndex] = currentPlayer;
         checkWinner();
         currentPlayer = currentPlayer === "X" ? "O" : "X";
     }
 }
-
+// function to check the winner "not working to lazy to fix it"
 function checkWinner() {
     for (var i = 0; i < winCombination.length; i++) {
         var [a, b, c] = winCombination[i];
@@ -97,15 +98,17 @@ function checkWinner() {
 
 
 }
-// Reset the game
+
+// Reset the game ""to lazy to fix it tooooooooooooo, but the code stays to slow down the browser :)""
 var resetButton = document.getElementById("reset");
 resetButton.addEventListener("click", resetGame);
 
 function resetGame() {
     for (let i = 0; i < cells.length; i++) {
-        cells[i].innerText = "Pizza";
+        cells[i].innerText = "Pick";
     }
     currentPlayer = "X";
     gameOver = false;
     board = ["", "", "", "", "", "", "", "", ""];
 }
+// End of XO game
