@@ -1,0 +1,144 @@
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.headerLinks a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.headerLinks a:hover {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+#playbuttonHeader {
+    border: 4px solid #000000;
+    border-radius: 10px;
+    background-color: #000000;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#playbuttonHeader:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 4px solid #000000;
+}
+
+/* Disclaimer section */
+#disclaimer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f4f4f4;
+    height: 170px;
+}
+
+#disclaimer p {
+    color: #000000;
+    font-size: 13px;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+}
+
+.PlayChessButton {
+    border: 4px solid #000000;
+    border-radius: 10px;
+    background-color: #000000;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+}
+
+.PlayChessButton:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 4px solid #000000;
+}
+
+.aboutButton {
+    background-color: #dadada;
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+#footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 200px;
+}
+
+#FirstFooter {
+    margin: 10px;
+}
+
+#footerBlocks {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+#footerBlock1 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5a2323;
+}
+
+.footerText {
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+}
+
+.footerlinks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.footerlinks a {
+    color: #000000;
+    font-size: 13px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0000ff;
+    text-decoration: none;
+}
