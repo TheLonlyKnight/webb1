@@ -1,0 +1,20 @@
+@media (max-width: 480px) {
+    #firstContainer {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    #firstContainer h1 {
+        font-size: 20px;
+    }
+
+    #chessImage {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .chessText {
+        font-size: 14px;
+        margin: 5px;
+    }
+}
