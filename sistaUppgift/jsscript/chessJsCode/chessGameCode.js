@@ -61,11 +61,16 @@ function drawPieces() {
 };
 drawPieces();
 function movePiece(from, to) {
-    const fromSquare = chessboard.children[from];
-    const toSquare = chessboard.children[to];
-    if (fromSquare.firstChild) {2
-        toSquare.appendChild(fromSquare.firstChild);
-        fromSquare.removeChild(fromSquare.firstChild);
+    const squares = chessboard.children;
+    const fromSquare = squares[from];
+    const toSquare = squares[to];
+    const piece = fromSquare.querySelector('img');
+    
+    if (piece) {
+        fromSquare.removeChild(piece);        
+        toSquare.appendChild(piece);
+        fromSquare.style.backgroundColor = (Math.floor(from / 8) + from) % 2 === 0 ? 'green' : 'white';
+        toSquare.style.backgroundColor = (Math.floor(to / 8) + to) % 2 === 0 ? 'green' : 'white';
     }
 };
 addEventListener('click', (event) => {
