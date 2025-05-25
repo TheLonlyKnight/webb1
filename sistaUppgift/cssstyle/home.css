@@ -180,7 +180,7 @@
     .aboutOurShop ul,
     .aboutOurShop li,
     .aboutOurShop a {
-        font-size: 90%;
+        font-size: 70%;
     }
     .aboutOurShop ul {
         padding-left: 20px;
@@ -190,6 +190,16 @@
         max-width: 350px;
         display: block;
         margin: 20px auto;
+    }
+        .aboutOurShop a.BuyNow,
+    .aboutOurShop a.playNowButton {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 10px 0;
+        padding: 10px 0;
+        font-size: 70%; 
+        text-align: center;
     }
 }
 
