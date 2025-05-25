@@ -1,4 +1,10 @@
 @media (max-width: 480px) {
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
     .firstContainer {
         height: auto;
         padding: 10px;
@@ -44,31 +50,14 @@
     .aboutOurShop {
         flex-direction: column;
         height: auto;
+        padding: 10px 0;
     }
 
-    .firstSide {
-        width: 100%;
-    }
-
+    .firstSide,
     .secondside {
         width: 100%;
     }
 
-    #comments {
-        flex-direction: column;
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .comment {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .commentContent img {
-        width: 50px;
-        height: 50px;
-    }
     .aboutOurShop h2,
     .aboutOurShop h3,
     .aboutOurShop p,
@@ -77,7 +66,27 @@
     .aboutOurShop a {
         font-size: 80%;
     }
-    .aboutOurShop {
+
+    #comments {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
         padding: 10px 0;
+        height: auto;
+        margin-bottom: 40px; /* Ensures space above footer */
+    }
+
+    .comment {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .commentContent img {
+        width: 50px;
+        height: 50px;
     }
 }
+
