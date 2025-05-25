@@ -1,0 +1,42 @@
+
+@media (max-width: 768px) {
+    #mainContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #textContainer {
+        width: 100%;
+        padding: 10px;
+    }
+    #contactContainer ul {
+        padding: 10px;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    input[type="submit"] {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 480px) {
+    img {
+        width: 100%;
+    }
+    #textContainer {
+        padding: 8px;
+    }
+    #contactContainer ul {
+        padding: 8px;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    input[type="submit"] {
+        font-size: 0.7rem;
+    }
+}
