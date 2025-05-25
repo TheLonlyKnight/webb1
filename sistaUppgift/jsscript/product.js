@@ -23,7 +23,10 @@ const productId = urlParams.get('id');const products = {
 
 if (products[productId]) {
     const product = products[productId];
-    document.getElementById("productImage").src = product.image;
+    const img = document.getElementById("productImage");
+    img.src = product.image;
+    img.width = 400;   // Match your HTML attribute
+    img.height = 400;  // Match your HTML attribute
     document.getElementById("productTitle").innerHTML = product.title;
     document.getElementById("productDescription").innerHTML = product.description;
     document.getElementById("price").innerHTML = product.price;
