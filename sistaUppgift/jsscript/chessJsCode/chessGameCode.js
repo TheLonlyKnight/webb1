@@ -7,9 +7,9 @@ chessboard.style.gridTemplateRows = 'repeat(8, 1fr)';
 chessboard.style.gridGap = '0px';
 
 const pieces = {
-    'r': '/ChessPieces/pieces-svg/rook-b.svg',
-    'n': '/ChessPieces/pieces-svg/knight-b.svg',
-    'b': '/ChessPieces/pieces-svg/bishop-b.svg',
+    'r': 'ChessPieces/pieces-svg/rook-b.svg',
+    'n': 'ChessPieces/pieces-svg/knight-b.svg',
+    'b': 'ChessPieces/pieces-svg/bishop-b.svg',
     'q': '/ChessPieces/pieces-svg/queen-b.svg',
     'k': '/ChessPieces/pieces-svg/king-b.svg',
     'p': '/ChessPieces/pieces-svg/pawn-b.svg',

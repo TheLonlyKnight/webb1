@@ -2,7 +2,7 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const productId = urlParams.get('id');const products = {
     "1": {
-        image: "bilder/smallareBilder/thirdproduct3.webp",
+        image: "bilder/smallareBilder/thirdproduct1.webp",
         title: "Fancy Chess Board",
         description: "Is there an important date coming soon and you don't know what gift to give? No worries! For only $499, you can gift a full chess board.",
         price: "Price: $499.99"
