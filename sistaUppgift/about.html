@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="cssstyle/mobileCss/maintemplate.css" media="screen and (max-width: 768px)">
     <link rel="stylesheet" href="cssstyle/mobileCss/about.css" media="screen and (max-width: 768px)">
     <script src="jsscript/StarterTemplateScript.js" defer></script>
+    <script src="jsscript/about.js" defer></script>
 </head>
 <body>
     <div id="HeaderContainer"></div>
@@ -22,7 +23,8 @@
                 <p>Think of us as your one-stop shop for all things chess-related... minus the actual shop part. Whether you’re a grandmaster in the making or someone who thinks a rook is just a funny-looking tower, there’s room for you here. So grab a friend, start a game, and remember: it’s all fun and games until someone shouts “Checkmate!”</p>
                 <p>This captures the playful spirit while hinting at the chess-playing feature. What do you think? Should we spice it up more?</p>
             </div>
-            <div id="contactContainer">
+            <button id="toggleContactButton">Show Contact Form</button>
+            <div id="contactContainer" style="display: none;">
                 <h2>Contact Us</h2>
                 <ul>
                     <li id="firstrow">

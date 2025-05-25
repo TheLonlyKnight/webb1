@@ -9,7 +9,7 @@
 }
 img {
     width: 30%;
-    height: auto;
+    height: 30%;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 5px;
@@ -73,4 +73,31 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
     background-color: #333;
+}
+#toggleContactButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+}
+
+#toggleContactButton:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#toggleContactButton:active {
+    background-color: #333333;
+    color: #ffffff;
+    transform: scale(0.80);
 }
