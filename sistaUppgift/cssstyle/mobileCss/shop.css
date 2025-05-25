@@ -7,7 +7,8 @@
         padding: 10px;
     }
 
-    .product {
+    .product,
+    .mainproduct {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -17,9 +18,11 @@
         border: 1px solid #ddd;
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
     }
 
-    .product img {
+    .product img,
+    .mainproduct img {
         width: 90%;
         height: auto;
         margin-bottom: 15px;
@@ -40,7 +43,9 @@
     }
 
     .Button,
-    .SecondaryButton {
+    .SecondaryButton,
+    .mainproductButton,
+    .mainproductSecondaryButton {
         font-size: 0.8rem;
         padding: 6px 12px;
     }

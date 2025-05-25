@@ -112,3 +112,23 @@ img {
     height: auto;
     align-items: center;
 }
+
+.product,
+.mainproduct {
+    background-color: #f9f9f9;
+    border: 1.5px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    margin-bottom: 24px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+@media (min-width: 769px) {
+    .mainproduct {
+        background-color: #e3eaff;
+        border: 2px solid #7da0fa;
+        box-shadow: 0 4px 16px rgba(125,160,250,0.12);
+    }
+}

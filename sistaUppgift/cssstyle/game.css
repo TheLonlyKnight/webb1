@@ -21,3 +21,14 @@
     color: #000000;
     margin: 10px;
 }
+#chessboard {
+    width: 90vw;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    margin: 0 auto;
+}

@@ -17,4 +17,12 @@
         font-size: 14px;
         margin: 5px;
     }
+
+    #chessboard {
+        width: 98vw;
+        max-width: 98vw;
+        aspect-ratio: 1 / 1;
+        height: auto;
+        margin: 10px auto;
+    }
 }

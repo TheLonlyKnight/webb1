@@ -1,6 +1,4 @@
 chessboard = document.getElementById('chessboard');
-chessboard.style.width = '400px';
-chessboard.style.height = '400px';
 chessboard.style.border = '3px solid black';
 chessboard.style.position = 'relative';
 chessboard.style.display = 'grid';
@@ -35,8 +33,8 @@ const initialBoard = [
 function drawBoard() {
     for (let i = 0; i < 64; i++) {
         const square = document.createElement('div');
-        square.style.width = '50px';
-        square.style.height = '50px';
+        square.style.width = '100%';
+        square.style.height = '100%';
         square.style.boxSizing = 'border-box';
         square.style.border = '1px solid black';
         square.style.backgroundColor = (Math.floor(i / 8) + i) % 2 === 0 ? 'green' : 'white';
@@ -85,7 +83,6 @@ function resetBoard() {
     for (let i = 0; i < 64; i++) {
         const square = squares[i];
         for (let x=0; x < square.childElementCount; x++) {
-            // Remove all child elements from the square
             square.removeChild(square.firstChild);
 
         }
