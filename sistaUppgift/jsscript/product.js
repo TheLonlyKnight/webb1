@@ -8,7 +8,7 @@ const productId = urlParams.get('id');const products = {
         price: "Price: $499.99"
     },
     "2": {
-        image: "bilder/smallareBilder/secondproduct.webp",
+        image: "bilder/smallareBilder/secondproduct.webp1",
         title: "Arabian Chess Board",
         description: "For only $599, you can get a full chess set Arabian style with gold paint.",
         price: "Price: $599.99"
