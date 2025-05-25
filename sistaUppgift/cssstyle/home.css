@@ -141,11 +141,12 @@
 }
 
 #comments{
-    height: 250px;
+    height: 300px;
     width: 80%; 
     display: flex;
     flex-direction:row;
     margin-left: 30px;
+    padding: 20px;
 }
 
 .comment{
@@ -159,3 +160,36 @@
     height: 20%;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 900px) {
+    .aboutOurShop {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        padding: 20px 0;
+    }
+    .aboutOurShop .firstSide,
+    .aboutOurShop .secondSide {
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+    .aboutOurShop h2,
+    .aboutOurShop h3,
+    .aboutOurShop p,
+    .aboutOurShop ul,
+    .aboutOurShop li,
+    .aboutOurShop a {
+        font-size: 90%;
+    }
+    .aboutOurShop ul {
+        padding-left: 20px;
+    }
+    .aboutOurShop img.secondSide {
+        width: 100%;
+        max-width: 350px;
+        display: block;
+        margin: 20px auto;
+    }
+}
+
