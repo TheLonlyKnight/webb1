@@ -10,15 +10,15 @@ const pieces = {
     'r': 'ChessPieces/pieces-svg/rook-b.svg',
     'n': 'ChessPieces/pieces-svg/knight-b.svg',
     'b': 'ChessPieces/pieces-svg/bishop-b.svg',
-    'q': '/ChessPieces/pieces-svg/queen-b.svg',
-    'k': '/ChessPieces/pieces-svg/king-b.svg',
-    'p': '/ChessPieces/pieces-svg/pawn-b.svg',
-    'R': '/ChessPieces/pieces-svg/rook-w.svg',
-    'N': '/ChessPieces/pieces-svg/knight-w.svg',
-    'B': '/ChessPieces/pieces-svg/bishop-w.svg',
-    'Q': '/ChessPieces/pieces-svg/queen-w.svg',
-    'K': '/ChessPieces/pieces-svg/king-w.svg',
-    'P': '/ChessPieces/pieces-svg/pawn-w.svg'
+    'q': 'ChessPieces/pieces-svg/queen-b.svg',
+    'k': 'ChessPieces/pieces-svg/king-b.svg',
+    'p': 'ChessPieces/pieces-svg/pawn-b.svg',
+    'R': 'ChessPieces/pieces-svg/rook-w.svg',
+    'N': 'ChessPieces/pieces-svg/knight-w.svg',
+    'B': 'ChessPieces/pieces-svg/bishop-w.svg',
+    'Q': 'ChessPieces/pieces-svg/queen-w.svg',
+    'K': 'ChessPieces/pieces-svg/king-w.svg',
+    'P': 'ChessPieces/pieces-svg/pawn-w.svg'
 };
 const initialBoard = [
     'rnbqkbnr',
