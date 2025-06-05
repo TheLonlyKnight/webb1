@@ -41,7 +41,6 @@ function drawBoard() {
         chessboard.appendChild(square);
     }
 };
-drawBoard();
 function drawPieces() {
     const squares = chessboard.children;
     for (let i = 0; i < 64; i++) {
@@ -59,39 +58,39 @@ function drawPieces() {
         }
     }
 };
-drawPieces();
-function movePiece(from, to) {
+function movePawn(position) {
+    const positionIndex = parseInt(position, 10);
     const squares = chessboard.children;
-    const fromSquare = squares[from];
-    const toSquare = squares[to];
-    const piece = fromSquare.querySelector('img');
-    
-    if (piece) {
-        fromSquare.removeChild(piece);        
-        toSquare.appendChild(piece);
-        fromSquare.style.backgroundColor = (Math.floor(from / 8) + from) % 2 === 0 ? 'green' : 'white';
-        toSquare.style.backgroundColor = (Math.floor(to / 8) + to) % 2 === 0 ? 'green' : 'white';
-    }
-};
-addEventListener('click', (event) => {
-    const target = event.target;
-    if (target.tagName === 'IMG') {
-        const from = Array.from(chessboard.children).indexOf(target.parentElement);
-        const to = Array.from(chessboard.children).indexOf(target.parentElement.nextElementSibling);
-        if (to >= 0 && to < 64) {
-            movePiece(from, to);
+    const square = squares[positionIndex];
+    const relativPosition = positionIndex - 8;
+    console.log(`Current Position: ${positionIndex}`);
+    console.log(`Relative Position: ${relativPosition}`);
+    console.log(`Square Element:`, square);
+}
+document.addEventListener('DOMContentLoaded', () => {
+    drawBoard();
+    drawPieces();
+
+    chessboard.addEventListener('click', (event) => {
+        const target = event.target;
+        if (target.alt == 'P') {
+            movePawn(target.dataset.position);
         }
-    }
+        if (target.tagName === 'IMG') {
+            const piece = target.alt;
+            console.log(`${piece} clicked`);
+        }
+    });
+
+    document.getElementById('resetButton').addEventListener('click', resetBoard);
 });
 function resetBoard() {
     const squares = chessboard.children;
     for (let i = 0; i < 64; i++) {
         const square = squares[i];
-        for (let x=0; x < square.childElementCount; x++) {
+        for (let x = 0; x < square.childElementCount; x++) {
             square.removeChild(square.firstChild);
-
         }
     }
     drawPieces();
 }
-document.getElementById('resetButton').addEventListener('click', resetBoard);
